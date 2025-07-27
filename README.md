@@ -1,11 +1,11 @@
 # 🧪 [Project Name] Test Automation Framework  
 
 
-# 🌐 Overview
+## 🌐 Overview
 "A Selenium WebDriver-based test automation framework for [web name] platform, using Cucumber (BDD) and TestNG for reporting."
 
 ---
-# 🛡️ Project Badges
+## 🛡️ Project Badges
 
 
 ### 🏷️ IDE and Tools
@@ -48,22 +48,22 @@
 
 ---
 
-# 📋 Table of Contents
-1. [Project Structure](#-project-structure)  
-2. [Prerequisites](#-prerequisites)  
-3. [Setup](#-setup-and-installation)  
-4. [Configuration](#-configuration)  
-5. [Test Execution](#-test-execution)  
-6. [Test Coverage](#-test-coverage)  
-7. [Framework Features](#-key-framework-features)  
-8. [Reporting](#-test-reporting)  
-9. [Contributing](#-contributing)  
-10. [License](#-license)
-11. [Author](#-author)
+## 📋 Table of Contents
+1. [Project Structure](#project-structure)  
+2. [Prerequisites](#prerequisites)  
+3. [Setup](#setup-and-installation)  
+4. [Configuration](#configuration)  
+5. [Test Execution](#test-execution)  
+6. [Test Coverage](#test-coverage)  
+7. [Framework Features](#key-framework-features)  
+8. [Reporting](#test-reporting)  
+9. [Contributing](#contributing)  
+10. [License](#license)  
+11. [Author](#author) 
 
 ---
 
-# 📂 Project Structure
+## 📂 Project Structure <a name="project-structure"></a>
 ```
 [Project Name]/
 ├── 📦src/
@@ -95,7 +95,7 @@
  
 ---
 
-## 🛠️ Prerequisites
+## 🛠️ Prerequisites <a name="prerequisites"></a>
 | Requirement       | Version/Details                  |
 |-------------------|----------------------------------|
 | Java JDK          | 11+ (Recommended: 17)           |
@@ -105,7 +105,7 @@
 
 ---
 
-## 🏗️ Setup and Installation
+## 🏗️ Setup and Installation <a name="setup-and-installation"></a>
 
 To clone and build the project, run the following commands:
 
@@ -115,14 +115,13 @@ cd [repo-name]
 mvn clean install
 ```
 ---
-# ⚙️ Configuration:
+## ⚙️ Configuration: <a name="configuration"></a>
 ## config.properties 
 **Browser Configuration**
 
 browser=chrome  
 url=https://example.com  
 
-# Extent Properties
 ## extent.properties
 **Enable Spark reporter**
 
@@ -152,7 +151,7 @@ screenshot.rel.path=../screenshots/
 
 ---
 
-## 🏃Running Tests
+## 🏃Test Execution  <a name="test-execution"></a>
 
 This project uses Maven, TestNG, and Cucumber for unit and behavior-driven tests. Below are instructions for running tests with different configurations.
 
@@ -189,7 +188,7 @@ mvn clean verify
 
 ---
 
-## 💡 Test Coverage  
+## 💡 Test Coverage  <a name="test-coverage"></a>
 *(Key test scenarios covered by the framework)*  
 
 ### **Login Feature**  
@@ -218,7 +217,7 @@ mvn clean verify
 
 ---
 
-##  💎 Key Framework Features
+##  💎 Key Framework Features <a name="key-framework-features"></a>
 ✅ **Multi-Browser Support** (Chrome, Firefox, Edge)
 
 ✅ **Page Object Model** - Clean locator management 
@@ -235,7 +234,7 @@ mvn clean verify
 
 ---
 
-## 📊 Test Reporting
+## 📊 Test Reporting <a name="test-reporting"></a>
 **TestNG HTML:** Open target/surefire-reports/index.html in a browser.
 **Allure:** Run allure serve allure-results to view.
 **Extent Reports:** Open target/reports/ExtentReport.html.
@@ -243,7 +242,7 @@ mvn clean verify
 
 ---
 
-## 🤝 Contributing
+## 🤝 Contributing <a name="contributing"></a>
 
 1. Fork the repo  
 2. Create a branch (`git checkout -b feature/new-feature`)  
@@ -254,13 +253,13 @@ Please ensure your code follows the existing style and includes appropriate test
 
 ---
 
-## 📜 License  
+## 📜 License  <a name="license"></a>
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.  
 **Note**: Contributions require review via pull requests (direct pushes to `main` are blocked).
 
 ---
 
-## 👤 Author
+## 👤 Author <a name="author"></a>
 **Abdullah Mostafa** 
 
 For issues or suggestions, contact 
