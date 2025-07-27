@@ -1,0 +1,15 @@
+name: Block Non-PR Changes
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore: [ "README.md", "LICENSE" ]  # Allows docs updates
+
+jobs:
+  block:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request == null  # Only triggers on direct pushes
+    steps:
+      - name: Block direct push
+        run: |
+          echo "Error: Direct pushes to main are blocked. Use Pull Requests."
+          exit 1
