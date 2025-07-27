@@ -176,6 +176,32 @@ mvn clean verify
     
     ** Cucumber Reports:** target/cucumber-reports/
 
+## 🧪 Test Coverage  
+*(Key test scenarios covered by the framework)*  
+
+### **Login Feature**  
+✔️ Successful login with valid credentials  
+✔️ Error on invalid credentials  
+✔️ Password recovery flow  
+✔️ Session timeout handling  
+
+### **Course Management**  
+✔️ Create new course with valid details  
+✔️ Delete existing course  
+✔️ Course search functionality  
+✔️ Bulk course imports  
+
+### **User Profile**  
+✔️ Update personal information  
+✔️ Change password validation  
+✔️ Profile picture upload  
+✔️ Notification preferences  
+
+### **API Endpoints**  
+✔️ CRUD operations verification  
+✔️ Response status code validation  
+✔️ Schema validation  
+✔️ Error handling tests  
 
 ## 🔧 💡 Key Framework Features
 ✅ **Multi-Browser Support** (Chrome, Firefox, Edge)
