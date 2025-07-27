@@ -53,21 +53,35 @@
 
 
 # 📂 Project Structure
-📦 repo  
-├── 📂 src/main/java  
-│   ├── 📂 pages          # 📦 Page Objects Model Classes 
-│   ├── 📂 utils          # 🛠️ Helpers (ConfigReader, ScreenshotUtils)  
-│   └── 📂 api            # 🌐 API Clients (for RestAssured projects)
-│   └── 📂 runners        # 🏃 Test Runners (TestNG/Cucumber)
-├── 📂 src/test  
-│   ├── 📂 features       # 📑 Cucumber .feature files  
-│   ├── 📂 step_defs      # 📝 BDD Steps (Cucumber projects)   
-│   └── 📂 test_cases     # ✔️ Traditional Test Classes  
-│   └── 📂 resources      # ✔️ Traditional Test Classes  
-│       └── 📂 fileA      # ✔️ Traditional Test Classes  
-│       └── 📂 config     # ⚙️ Configuration files 
-├── 📂 reports            # Test execution reports  
-└── 📂 docs               # Additional documentation  
+```
+[Project Name]/
+├── 📦src/
+│   ├── 📂 main/
+│   │   ├── 📂 java/
+│   │   │   ├── 📂 Base/                         # 🏗️ Base class for test setup and configuration
+│   │   │   │   └── TestBase.java        
+│   │   │   ├── 📂 Utils/                        # 🛠️ Helpers (ConfigReader, ScreenshotUtils) 
+│   │   │   │   ├── ConfigReaderWriter.java  
+│   │   │   │   └── ScreenshotUtils.java
+│   │   │   ├── 📂 Runners/                      # 🏃 Test Runners (TestNG/Cucumber)
+│   │   │   │   └── TestRunner.java        
+│   ├── 📂 test/
+│   │   ├── 📂 java/
+│   │   │   ├── 📂 Pages/                       # 📦 Page Objects Model Classes 
+│   │   │   │   ├── LoginPage.java       
+│   │   │   │   └── HomePage.java        
+│   │   │   ├── 📂 Step Definitions/            # 📝 BDD Steps (Cucumber projects)
+│   │   │   │   ├── LoginPageSteps.java       
+│   │   │   │   └── HomePageSteps.java       
+│   │   ├── 📂 resources/                       # ⚙️ Configuration files 
+│   │   │   └── config.properties        
+│   │   │   └── extent.properties         
+├── TestNG.xml                           
+├── pom.xml                              
+├── .gitignore                            
+└── README.md                             
+```
+ 
 
 
 ---
@@ -95,28 +109,72 @@ mvn clean install
 # ⚙️ Configuration files:
 ## config.properties 
 **Browser Configuration**
+
 browser=chrome  
 url=https://example.com  
 
 # Extent Properties
 ## extent.properties
 **Enable Spark reporter**
+
 extent.reporter.spark.start=true
+
 extent.reporter.spark.out=target/reports/ExtentReport.html
 
 **Configure test name display**
+
 extent.reporter.spark.cucumber.scenario.name=true
+
 extent.reporter.spark.vieworder=dashboard,test,category,exception,author,device
 
 **Report settings**
+
 extent.reporter.spark.documentTitle=Winjigo Test Report
+
 extent.reporter.spark.reportName=Automation Test Results
+
 extent.reporter.spark.theme=standard
 
 **Screenshot settings**
+
 screenshot.dir=target/screenshots/
+
 screenshot.rel.path=../screenshots/
 
+## 🏃Running Tests
+
+This project uses Maven, TestNG, and Cucumber for unit and behavior-driven tests. Below are instructions for running tests with different configurations.
+
+### Prerequisites
+- **Maven**: Ensure Maven is installed (`mvn -version`).
+- **Java**: Set `JAVA_HOME` to Java 11 or 17 (check `pom.xml` for required version).
+- **Dependencies**: Run `mvn dependency:resolve` to download dependencies.
+
+### Test Execution Commands
+
+```bash
+# Run all tests with a clean build (recommended for reliable results)
+mvn clean test
+
+# Run specific Cucumber tests by tag (e.g., @smoke, @regression)
+mvn clean test -Dcucumber.filter.tags="@smoke"
+
+# Run specific TestNG suite (replace 'testng.xml' with your suite file)
+mvn test -DsuiteXmlFile=testng.xml
+
+# Run tests without cleaning (faster, but risks stale artifacts)
+mvn test
+
+# Compile code without running tests (for debugging compilation issues)
+mvn compile
+
+# Run integration tests (if using maven-failsafe-plugin)
+mvn clean verify
+```
+## Generate Reports:
+    ** Extent Reports:** target/extent-reports/
+    
+    ** Cucumber Reports:** target/cucumber-reports/
 
 ## 🤝 Contributing
 
