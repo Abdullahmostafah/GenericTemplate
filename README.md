@@ -176,6 +176,20 @@ mvn clean verify
     
     ** Cucumber Reports:** target/cucumber-reports/
 
+## 🔧 💡 Key Framework Features
+✅ **Multi-Browser Support** (Chrome, Firefox, Edge)
+✅ **Page Object Model** - Clean locator management 
+✅ **Parallel Test Execution** (Selenium Grid/Docker)  
+✅ **BDD with Cucumber** (Gherkin syntax)  
+✅ **API Testing** (REST Assured / Requests)  
+✅ **CI/CD Ready** (GitHub Actions/Jenkins)  
+✅ **Extensive Logging** (Log4j/SLF4J)  
+
+## 📊 Test Reporting
+- **HTML Reports:** Available at target/surefire-reports/index.html (TestNG)
+- **Allure Reports:** Run allure serve allure-results to view
+- **Screenshots:** Saved in reports/screenshots/ for test failures
+
 ## 🤝 Contributing
 
 1. Fork the repo  
