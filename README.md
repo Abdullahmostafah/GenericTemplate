@@ -116,26 +116,26 @@ mvn clean install
 ```
 ---
 ## ⚙️ Configuration: <a name="configuration"></a>
-## config.properties 
-**Browser Configuration**
+## ✅ config.properties 
+✔️ **Browser Configuration**
 
 browser=chrome  
 url=https://example.com  
 
-## extent.properties
-**Enable Spark reporter**
+## ✅ extent.properties
+✔️ **Enable Spark reporter**
 
 extent.reporter.spark.start=true
 
 extent.reporter.spark.out=target/reports/ExtentReport.html
 
-**Configure test name display**
+✔️ **Configure test name display**
 
 extent.reporter.spark.cucumber.scenario.name=true
 
 extent.reporter.spark.vieworder=dashboard,test,category,exception,author,device
 
-**Report settings**
+✔️ **Report settings**
 
 extent.reporter.spark.documentTitle=Winjigo Test Report
 
@@ -143,7 +143,7 @@ extent.reporter.spark.reportName=Automation Test Results
 
 extent.reporter.spark.theme=standard
 
-**Screenshot settings**
+✔️ **Screenshot settings**
 
 screenshot.dir=target/screenshots/
 
@@ -156,9 +156,9 @@ screenshot.rel.path=../screenshots/
 This project uses Maven, TestNG, and Cucumber for unit and behavior-driven tests. Below are instructions for running tests with different configurations.
 
 ### Check list
-- **Maven**: Ensure Maven is installed (`mvn -version`).
-- **Java**: Set `JAVA_HOME` to Java 11 or 17 (check `pom.xml` for required version).
-- **Dependencies**: Run `mvn dependency:resolve` to download dependencies.
+✔️ **Maven**: Ensure Maven is installed (`mvn -version`).  
+✔️ **Java**: Set `JAVA_HOME` to Java 11 or 17 (check `pom.xml` for required version).  
+✔️ **Dependencies**: Run `mvn dependency:resolve` to download dependencies.  
 
 ### Test Execution Commands
 
@@ -180,11 +180,12 @@ mvn compile
 
 # Run integration tests (if using maven-failsafe-plugin)
 mvn clean verify
+
 ```
 ## Generate Reports:
-**Extent Reports:** Available at target/reports/ExtentReport.html
+✔️ **Extent Reports:** Available at target/reports/ExtentReport.html
 
-**Cucumber Reports:** Available at target/cucumber-reports/
+✔️ **Cucumber Reports:** Available at target/cucumber-reports/
 
 ---
 
@@ -218,27 +219,21 @@ mvn clean verify
 ---
 
 ##  💎 Key Framework Features <a name="key-framework-features"></a>
-✅ **Multi-Browser Support** (Chrome, Firefox, Edge)
-
-✅ **Page Object Model** - Clean locator management 
-
-✅ **Parallel Test Execution** (Selenium Grid/Docker)  
-
-✅ **BDD with Cucumber** (Gherkin syntax)  
-
-✅ **API Testing** (REST Assured / Requests)  
-
-✅ **CI/CD Ready** (GitHub Actions/Jenkins) 
-
-✅ **Extensive Logging** (Log4j/SLF4J)  
+✔️ **Multi-Browser Support** (Chrome, Firefox, Edge).  
+✔️ **Page Object Model** - Clean locator management.  
+✔️ **Parallel Test Execution** (Selenium Grid/Docker).  
+✔️ **BDD with Cucumber** (Gherkin syntax).  
+✔️ **API Testing** (REST Assured / Requests).  
+✔️ **CI/CD Ready** (GitHub Actions/Jenkins).  
+✔️ **Extensive Logging** (Log4j/SLF4J).  
 
 ---
 
 ## 📊 Test Reporting <a name="test-reporting"></a>
-**TestNG HTML:** Open target/surefire-reports/index.html in a browser.
-**Allure:** Run allure serve allure-results to view.
-**Extent Reports:** Open target/reports/ExtentReport.html.
-**Screenshots:** Verify failure screenshots in target/screenshots/.
+✔️ **TestNG HTML:** Open target/surefire-reports/index.html in a browser.  
+✔️ **Allure:** Run allure serve allure-results to view.  
+✔️ **Extent Reports:** Open target/reports/ExtentReport.html.  
+✔️ **Screenshots:** Verify failure screenshots in target/screenshots/.  
 
 ---
 
