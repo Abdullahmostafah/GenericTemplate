@@ -52,6 +52,24 @@
 - [License](#-license)
 
 
+# 📂 Project Structure
+📦 repo  
+├── 📂 src/main/java  
+│   ├── 📂 pages          # 📦 Page Objects Model Classes 
+│   ├── 📂 utils          # 🛠️ Helpers (ConfigReader, ScreenshotUtils)  
+│   └── 📂 api            # 🌐 API Clients (for RestAssured projects)
+│   └── 📂 runners        # 🏃 Test Runners (TestNG/Cucumber)
+├── 📂 src/test  
+│   ├── 📂 features       # 📑 Cucumber .feature files  
+│   ├── 📂 step_defs      # 📝 BDD Steps (Cucumber projects)   
+│   └── 📂 test_cases     # ✔️ Traditional Test Classes  
+│   └── 📂 resources      # ✔️ Traditional Test Classes  
+│       └── 📂 fileA      # ✔️ Traditional Test Classes  
+│       └── 📂 config     # ⚙️ Configuration files 
+├── 📂 reports            # Test execution reports  
+└── 📂 docs               # Additional documentation  
+
+
 ---
 
 ## 🛠️ Prerequisites  
@@ -64,7 +82,7 @@
 
 ---
 
-## ⚙️ Setup
+## 🏗️ Setup & Installation
 
 To clone and build the project, run the following commands:
 
@@ -73,6 +91,32 @@ git clone https://github.com/Abdullahmostafah/[repo-name].git
 cd [repo-name]
 mvn clean install
 ```
+
+# ⚙️ Configuration files:
+## config.properties 
+**Browser Configuration**
+browser=chrome  
+url=https://example.com  
+
+# Extent Properties
+## extent.properties
+**Enable Spark reporter**
+extent.reporter.spark.start=true
+extent.reporter.spark.out=target/reports/ExtentReport.html
+
+**Configure test name display**
+extent.reporter.spark.cucumber.scenario.name=true
+extent.reporter.spark.vieworder=dashboard,test,category,exception,author,device
+
+**Report settings**
+extent.reporter.spark.documentTitle=Winjigo Test Report
+extent.reporter.spark.reportName=Automation Test Results
+extent.reporter.spark.theme=standard
+
+**Screenshot settings**
+screenshot.dir=target/screenshots/
+screenshot.rel.path=../screenshots/
+
 
 ## 🤝 Contributing
 
