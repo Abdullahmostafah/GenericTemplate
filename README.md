@@ -51,8 +51,46 @@
 - [Contributing](#-contributing)
 - [License](#-license)
 
+
+---
+
+## 🛠️ Prerequisites  
+| Requirement       | Version/Details                  |
+|-------------------|----------------------------------|
+| Java JDK          | 11+ (Recommended: 17)           |
+| Maven             | 3.8.1+                          |
+| Browser/Device    | Chrome 115+ / Android 10+ etc.  |
+| Drivers           | chromedriver (matching version) |
+
+---
+
+## ⚙️ Setup
+
+To clone and build the project, run the following commands:
+
+```bash
+git clone https://github.com/Abdullahmostafah/[repo-name].git
+cd [repo-name]
+mvn clean install
+```
+
+## 🤝 Contributing
+
+1. Fork the repo  
+2. Create a branch (`git checkout -b feature/new-feature`)  
+3. Commit changes (`git commit -m "Add new feature"`)  
+4. Push (`git push origin feature/new-feature`)  
+5. Open a Pull Request  
+Please ensure your code follows the existing style and includes appropriate tests.
+
 ## 📜 License  
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.  
 **Note**: Contributions require review via pull requests (direct pushes to `main` are blocked).
 
+
+## 🧑‍💻 Author
+**Abdullah Mostafa** 
+
+For issues or suggestions, contact 
+GitHub: [Abdullahmostafah](https://github.com/Abdullahmostafah).
 
