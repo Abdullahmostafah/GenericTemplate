@@ -1,5 +1,7 @@
 # 🧪 [Project Name] Test Automation Framework  
 
+# 📌 Overview
+"A Selenium WebDriver-based test automation framework for [web name] platform, using Cucumber (BDD) and TestNG for reporting."
 
 # 🛡️ Project Badges
 
@@ -39,6 +41,18 @@
 ![Exec Maven Plugin](https://img.shields.io/badge/Exec_Maven_Plugin-3.5.1-blue?logo=apache-maven&link=https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin)
 ![Maven Cucumber Reporting](https://img.shields.io/badge/Maven_Cucumber_Reporting-5.7.0-blue?logo=cucumber&link=https://mvnrepository.com/artifact/net.masterthought/maven-cucumber-reporting)
 
+# 📋 Table of Contents (Optional but Useful for Large Projects)
+- [Prerequisites](#-prerequisites)
+- [Setup](#-setup)
+- [Project Structure](#-project-structure)
+- [Running Tests](#-running-tests)
+- [Test Coverage](#-test-coverage)
+- [Framework Features](#-framework-features)
+- [Contributing](#-contributing)
+- [License](#-license)
+
 ## 📜 License  
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.  
 **Note**: Contributions require review via pull requests (direct pushes to `main` are blocked).
+
+
