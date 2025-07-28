@@ -258,6 +258,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Abdullah Mostafa** 
 
 For issues or suggestions, contact 
-GitHub: 🧑‍💻 [Abdullahmostafah](https://github.com/Abdullahmostafah).
+🧑‍💻 [Abdullahmostafah](https://github.com/Abdullahmostafah).
 
 ---
