@@ -1,10 +1,10 @@
 ### ================================================ ###
-### Ultimate Test Automation .gitignore             ###
-### Optimized for:                                  ###
-### - Selenium WebDriver                            ###
-### - Appium Mobile Testing                         ###
-### - Cucumber BDD                                  ###
-### - TestNG/JUnit                                  ###
+### Ultimate Test Automation .gitignore              ###
+### Optimized for:                                   ###
+### - Selenium WebDriver                             ###
+### - Appium Mobile Testing                          ###
+### - Cucumber BDD                                   ###
+### - TestNG/JUnit                                   ###
 ### ================================================ ###
 
 ### --- IDE & Build Systems --- ###
