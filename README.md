@@ -13,7 +13,7 @@
 ![Java](https://img.shields.io/badge/Java-21-blue?logo=java&link=https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html)
 ![Maven](https://img.shields.io/badge/Maven-3.9.9-blue?logo=apache-maven&link=https://maven.apache.org/download.cgi)
 ![Jenkins](https://img.shields.io/badge/Jenkins-2.462.1-blue?logo=jenkins&link=https://www.jenkins.io/download/)
-
+![Docker](https://img.shields.io/badge/Docker-26.0.0-blue?logo=docker&link=https://www.docker.com/)
 
 ### 🏷️ Dependencies
 ![Rest Assured](https://img.shields.io/badge/Rest_Assured-5.5.5-blue?logo=java&link=https://mvnrepository.com/artifact/io.rest-assured/rest-assured)
