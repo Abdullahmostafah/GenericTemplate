@@ -70,27 +70,30 @@
 │   ├── 📂 main/
 │   │   ├── 📂 java/
 │   │   │   ├── 📂 Base/                         # 🏗️ Base class for test setup and configuration
-│   │   │   │   └── TestBase.java        
+│   │   │   │   └── 🔵 TestBase.java        
 │   │   │   ├── 📂 Utils/                        # 🛠️ Helpers (ConfigReader, ScreenshotUtils) 
-│   │   │   │   ├── ConfigReaderWriter.java  
-│   │   │   │   └── ScreenshotUtils.java
+│   │   │   │   ├── 🔵 ConfigReaderWriter.java  
+│   │   │   │   └── 🔵 ScreenshotUtils.java
 │   │   │   ├── 📂 Runners/                      # 🏃 Test Runners (TestNG/Cucumber)
-│   │   │   │   └── TestRunner.java        
+│   │   │   │   └── 🔵 TestRunner.java        
 │   ├── 📂 test/
 │   │   ├── 📂 java/
-│   │   │   ├── 📂 Pages/                       # 📦 Page Objects Model Classes 
-│   │   │   │   ├── LoginPage.java       
-│   │   │   │   └── HomePage.java        
-│   │   │   ├── 📂 Step Definitions/            # 📝 BDD Steps (Cucumber projects)
-│   │   │   │   ├── LoginPageSteps.java       
-│   │   │   │   └── HomePageSteps.java       
-│   │   ├── 📂 resources/                       # ⚙️ Configuration files 
-│   │   │   └── config.properties        
-│   │   │   └── extent.properties         
-├── TestNG.xml                           
-├── pom.xml                              
-├── .gitignore                            
-└── README.md                             
+│   │   │   ├── 📂 Pages/                        # 📦 Page Objects Model Classes 
+│   │   │   │   ├── 🔵 LoginPage.java       
+│   │   │   │   └── 🔵 HomePage.java        
+│   │   │   ├── 📂  Step Definitions/            # 📝 BDD Steps (Cucumber projects)
+│   │   │   │   ├── 🔵 LoginPageSteps.java       
+│   │   │   │   └── 🔵 HomePageSteps.java       
+│   │   ├── 🗃️ resources/                        # 🔧 Configuration files 
+│   │   │   ├── 📂 Features/                     # 📋 Feature files 
+│   │   │   │   ├── 🥒 LoginPage.feature       
+│   │   │   │   └── 🥒 HomePage.feature        
+│   │   │   ├── ⚙️ config.properties           
+│   │   │   └── ⚙️ extent.properties         
+├── 📜 TestNG.xml                           
+├── 📜 pom.xml                              
+├── 🔕 .gitignore                            
+└── 📄 README.md                             
 ```
  
 ---
